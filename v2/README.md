@@ -19,48 +19,59 @@ https://server.joog-lim.info/**apiV2**
 
 관리자 세션은 `Authorization header`에 넣어주시면 됩니다
 
+```diff
++ /count, 기존 알고리즘 갯수들을 카운팅하는 기능추가
++ /rule, 룰 페이지에 나오는 룰 값들을 리턴해주는 기능추가
+
+- /get-list 삭제
++ 대신 /AlgorithmList, /AlgorithmPage 추가
+
+- /patch/{id}의 역할 분할
++ /{id}/setStatus, /{id}/modify, /{id}/report
+
++ login 및 logout 추가
++ emoji 추가
+```
 ## /post
 
-[GET /count](https://www.notion.so/GET-count-cce8a77a997e4659ad6d762e727cbd49)
+[GET /count]()
 
-[GET /rule](https://www.notion.so/GET-rule-90b72389903240c4a164623819a307f4)
+[GET /rule]()
 
-[GET /AlgorithemList (Auth, continue : true)](https://www.notion.so/GET-AlgorithemList-Auth-continue-true-19bee6b6feaa41f498bd49af1599dab0)
+[GET /AlgorithemList (Auth, continue : true)]()
 
-[GET /AlgorithemPage](https://www.notion.so/GET-AlgorithemPage-b961ad2c677b4dbfbe8441ff52d34a85)
+[GET /AlgorithemPage]()
 
-[POST /create](https://www.notion.so/POST-create-4208b8b4b2fc4a57ac7a5a81cf4ebefa)
+[POST /create]()
 
-[POST /{id}/setStatus](https://www.notion.so/POST-id-setStatus-8b7f75c6848c4a0c9d9fe4a4c649c109)
+[POST /{id}/setStatus]()
 
-[PATCH /{id}/modify](https://www.notion.so/PATCH-id-modify-4840b98ff1024b3183bdaf41cdbf1457)
+[PATCH /{id}/modify]()
 
-[PATCH /{id}/report](https://www.notion.so/PATCH-id-report-a66e228505044f4bba96d15f46525308)
+[PATCH /{id}/report]()
 
-[DELETE /{id}/delete](https://www.notion.so/DELETE-id-delete-cecd00b717cb45949f44488a84c5893d)
+[DELETE /{id}/delete]()
 
 ## /auth
 
-[POST ](https://www.notion.so/POST-4753af691be1455f9c8c12c879cea709)
+[POST ]()
 
 ## /verify
 
-[GET ](https://www.notion.so/GET-62a997cdbf824e378821c68aad39c1fe)
+[GET ]()
 
 ## /account
 
----
+[POST /login]()
 
-[POST /login](https://www.notion.so/POST-login-6456534045a24f58842fa8c0ceddfa3f)
-
-[POST /logout](https://www.notion.so/POST-logout-1488be18da734d9fb8d1a055a1bfc8c1)
+[POST /logout]()
 
 ## /emoji
 
-[GET /](https://www.notion.so/GET-88d9add039834821942bbf88ddc12d7f)
+[GET /]()
 
 두개 다 Authorization에 토큰 넣어주세용~
 
-[POST /{emoji}](https://www.notion.so/POST-emoji-929b52057b6c4687a449f6f4aff3a980)
+[POST /{emoji}]()
 
-[DELETE /{emoji}](https://www.notion.so/DELETE-emoji-bd3bb230335748059134d0ec2beefdbc)
+[DELETE /{emoji}]()
