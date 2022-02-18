@@ -10,7 +10,7 @@
 ```
 
 기본적인 경로는 다음과 같습니다.
-https://server.joog-lim.info/**apiV2**
+https://server.joog-lim.info/apiV2
 
 데이터 직렬화는 json으로 통일합니다.
 
