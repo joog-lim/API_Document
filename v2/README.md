@@ -34,23 +34,23 @@ https://server.joog-lim.info/apiV2
 ```
 ## /post
 
-[GET /count]()
+[GET /count](./post.md#get-count)
 
-[GET /rule]()
+[GET /rule](./post.md#get-rule)
 
-[GET /AlgorithemList (Auth, continue : true)]()
+[GET /AlgorithemList (Auth, continue : true)](./post.md#get-algorithemlist-auth-continue--true)
 
-[GET /AlgorithemPage]()
+[GET /AlgorithemPage](./post.md#get-algorithempage)
 
-[POST /create]()
+[POST /create](./post.md#post-create)
 
-[POST /{id}/setStatus]()
+[POST /{id}/setStatus](./post.md#post-idsetstatus)
 
-[PATCH /{id}/modify]()
+[PATCH /{id}/modify](./post.md#patch-idmodify)
 
-[PATCH /{id}/report]()
+[PATCH /{id}/report](./post.md#patch-idreport)
 
-[DELETE /{id}/delete]()
+[DELETE /{id}/delete](./post.md#delete-iddelete)
 
 ## /auth
 
