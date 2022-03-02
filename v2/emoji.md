@@ -16,6 +16,7 @@ num : 조회할 알고리즘 번호
     ```
 
 ## POST /{emoji}
+`Authorization`에 토큰 필수
 
 emoji = ["leaf"]
 
@@ -56,6 +57,8 @@ num = 추가할 게시물 넘버
       {"message": "토큰이 만료되었습니다."}
       ```
 ## DELETE /{emoji}
+`Authorization`에 토큰 필수
+
 
 emoji = ["leaf"]
 
