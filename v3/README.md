@@ -40,28 +40,28 @@ https://github.com/joog-lim/API_Document/blob/main/error_code.md
 
 ### /algorithm
 
-[POST /]()
-[GET /count]()
-[GET /rule]()
-[GET /rule/web]()
-[GET /list/{type}/admin]()
-[GET /list/{type}]()
-[DELETE /{id}]()
-[PATCH /{id}]()
-[PATCH /{id}/status]()
+[POST /]()  
+[GET /count]()  
+[GET /rule]()  
+[GET /rule/web]()  
+[GET /list/{type}/admin]()  
+[GET /list/{type}]()  
+[DELETE /{id}]()  
+[PATCH /{id}]()  
+[PATCH /{id}/status]()  
 
 ### /leaf
-[POST /]()
-[DELETE /]()
+[POST /]()  
+[DELETE /]()  
 
 
 ### MISC
-[GET /verify]()
-[POST /login]()
-[POST /token]()
-[POST /apple/login]()
-[POST /authentication/number]()
-[POST /authentication/mail]()
+[GET /verify]()  
+[POST /login]()  
+[POST /token]()  
+[POST /apple/login]()  
+[POST /authentication/number]()  
+[POST /authentication/mail]()  
 
 ### only developer
-[POST /verify]()
+[POST /verify]()  
