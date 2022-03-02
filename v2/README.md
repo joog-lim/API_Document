@@ -54,24 +54,24 @@ https://server.joog-lim.info/apiV2
 
 ## /auth
 
-[POST ]()
+[POST /](./auth.md#post-)
 
 ## /verify
 
-[GET ]()
+[GET /](./verify.md#get-)
 
 ## /account
 
-[POST /login]()
+[POST /login](./account.md#post-login)
 
-[POST /logout]()
+[POST /logout](./account.md#post-logout)
 
 ## /emoji
 
-[GET /]()
+[GET /](./emoji.md#get-num)
 
 두개 다 Authorization에 토큰 넣어주세용~
 
-[POST /{emoji}]()
+[POST /{emoji}](./emoji.md#post-emoji)
 
-[DELETE /{emoji}]()
+[DELETE /{emoji}](./emoji.md#delete-emoji)
