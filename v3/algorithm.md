@@ -100,6 +100,57 @@ join rule of web
 ```
 
 ## GET /list/{type}
+
+token 선택적
+
+type으로는 cursor, page 
+
+원천적으로 cursor는 웹을 위해,
+page는 Android, iOS 를 위해
+
+cursor라면 criteria는 cursor로 생각해서 연결하면되고
+
+page라면 page로 생각해서 연결하면됨
+
+ex : 맨 첫 조회 값
+ /page?count=10&criteria=1
+ /cursor?count=10&criteria=0
+
++ cursor로 조회시 hasNext 및 nextCursor 프로퍼티 추가
+
+### req
+
+```
+?count=10&criteria=1
+
+&sort=leaf
+&sort=created
+&direction=desc
+&direction=asc
+```
+
+### res
+
+```
+{
+  "data": [
+    {
+    "idx": 27,
+    "algorithmNumber": 1,
+    "title": "Joog-lim ",
+    "content": "Joog-lim() !\n~~",
+    "tag": "",
+    ”reason”:””,
+    "createdAt": "2021-09-22T17:41:00.457Z",
+    "emojis": [],
+    "isClicked": false,
+    "emojiCount": 0
+    } 
+  ],
+  "status": "ACCEPTED"
+}
+```
+
 ## GET /list/{type}/admin
 ## DELETE /{id}
 ## PATCH /{id}
