@@ -140,7 +140,7 @@ ex : 맨 첫 조회 값
     "title": "Joog-lim ",
     "content": "Joog-lim() !\n~~",
     "tag": "",
-    ”reason”:””,
+    "reason":"",
     "createdAt": "2021-09-22T17:41:00.457Z",
     "emojis": [],
     "isClicked": false,
@@ -152,6 +152,112 @@ ex : 맨 첫 조회 값
 ```
 
 ## GET /list/{type}/admin
+
+token 선택적
+
+type으로는 cursor, page 
+
+원천적으로 cursor는 웹을 위해,
+page는 Android, iOS 를 위해
+
+cursor라면 criteria는 cursor로 생각해서 연결하면되고
+
+page라면 page로 생각해서 연결하면됨
+
+ex : 맨 첫 조회 값
+ /page?count=10&criteria=1
+ /cursor?count=10&criteria=0
+
++ cursor로 조회시 hasNext 및 nextCursor 프로퍼티 추가
+
+### req
+
+
+```
+?count=10&criteria=1&status=PENDING
+
+&sort=leaf
+&sort=created
+&direction=desc
+&direction=asc
+```
+
+- status
+  ```ts
+  | "PENDING"
+  | "ACCEPTED"
+  | "REJECTED"
+  | "REPORTED"
+  ```
+
+### res
+
+```json
+{
+  "data": [
+    {
+    "idx": 27,
+    "algorithmNumber": 1,
+    "title": "Joog-lim ",
+    "content": "Joog-lim() !\n~~",
+    "tag": "",
+    "reason" : "",
+    "createdAt": "2021-09-22T17:41:00.457Z",
+    "emojis": [],
+    "isClicked": false,
+    "emojiCount": 0
+    }
+  ],
+  "status": "ACCEPTED"
+}
+```
+
 ## DELETE /{id}
+
+게시물 삭제
+
+id값은 게시물 고유 idx값임
+ACCEPTED값만 삭제 가능
+only Admin
+
+### res
+
 ## PATCH /{id}
+
+게시물 수정
+
+id값은 게시물 고유 idx값임
+
+only Admin
+
+### req
+
+> /{id}
+
+```json
+{
+  "title" : "ASDF",
+  "content" : "asdfsdf",
+}
+```
+
 ## PATCH /{id}/status
+
+게시물 상태 수정
+
+id값은 게시물 고유 idx값임
+
+optional token
+신고 제외 모두 어드민이여야함
+
+AlgorithmStatusType : 
+"ACCEPTED" | "REJECTED" | "REPORTED”
+
+### req
+
+```json
+{
+  "status" : AlgorithmStatusType,
+  "reason": "그냥 하기싫어서요"
+}
+```
