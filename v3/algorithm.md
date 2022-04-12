@@ -41,7 +41,7 @@
 
 ### res
 
-```json
+```ts
 [
  { status: 'PENDING', count: '11' }
  { status: 'ACCEPTED', count: '11' }
@@ -55,7 +55,7 @@
 join rule
 ### res
 
-```json
+```ts
 {
     "content" : "규칙 복붙",
     "bold13" : ["폰트15 1", "폰트 15 2", ...],
@@ -69,7 +69,7 @@ join rule of web
 
 ### res
 
-```json
+```ts
 [
   {
     _id: 1,
