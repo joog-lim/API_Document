@@ -8,4 +8,4 @@
 [POST /account](./account.md) <!-- 로그인 -->  
 [PATCH /account/school](./account.md) <!-- 학년 반 번호 등 정보 입력 -->  
 
-[GET /account/Sunrabbit](./account.md) <!-- 유저 정보 조회 -->
+[GET /account/{nickname}](./account.md) <!-- 유저 정보 조회 -->
