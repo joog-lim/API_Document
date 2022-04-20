@@ -40,15 +40,15 @@ https://github.com/joog-lim/API_Document/blob/main/error_code.md
 
 ### /algorithm
 
-[POST /]()  
-[GET /count]()  
-[GET /rule]()  
-[GET /rule/web]()  
-[GET /list/{type}/admin]()  
-[GET /list/{type}]()  
-[DELETE /{id}]()  
-[PATCH /{id}]()  
-[PATCH /{id}/status]()  
+[POST /](./algorithm.md#post-)  
+[GET /count](./algorithm.md#get-count)  
+[GET /rule](./algorithm.md#get-rule)  
+[GET /rule/web](./algorithm.md#get-ruleweb)  
+[GET /list/{type}/admin](./algorithm.md#get-listtypeadmin)  
+[GET /list/{type}](./algorithm.md#get-listtype)  
+[DELETE /{id}](./algorithm.md#delete-id)  
+[PATCH /{id}](./algorithm.md#patch-id)  
+[PATCH /{id}/status](./algorithm.md#patch-idstatus)  
 
 ### /leaf
 [POST /]()  
@@ -56,13 +56,10 @@ https://github.com/joog-lim/API_Document/blob/main/error_code.md
 
 
 ### MISC
-[GET /verify]()  
-[POST /verify]()  
-[POST /token]()  
-[POST /authentication/mail]()  
-[PATCH /authentication/mail]() 
-[POST /signup]()  
-[POST /login]()  
+[GET /verify](./MISC.md#get-verify)  
+[POST /token](./MISC.md#post-token)  
+[POST /authentication/mail](./MISC.md#post-authenticationmail)  
+[PATCH /authentication/mail](./MISC.md#patch-authenticationmail) 
+[POST /signup](./MISC.md#post-signup)  
+[POST /login](./MISC.md#post-login)  
 
-### only developer
-[POST /verify]()  
