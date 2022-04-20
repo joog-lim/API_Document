@@ -26,9 +26,9 @@ Authorization : RefreshToken
 
 ```json
 {
-  accessToken : token,
-  refreshToken: token,
-  isAdmin : false
+  "accessToken" : "token",
+  "refreshToken": "token",
+  "isAdmin" : false
 }
 ```
 
