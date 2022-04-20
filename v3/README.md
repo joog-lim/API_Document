@@ -57,11 +57,12 @@ https://github.com/joog-lim/API_Document/blob/main/error_code.md
 
 ### MISC
 [GET /verify]()  
-[POST /login]()  
+[POST /verify]()  
 [POST /token]()  
-[POST /apple/login]()  
-[POST /authentication/number]()  
 [POST /authentication/mail]()  
+[PATCH /authentication/mail]() 
+[POST /signup]()  
+[POST /login]()  
 
 ### only developer
 [POST /verify]()  
