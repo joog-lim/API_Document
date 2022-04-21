@@ -125,8 +125,8 @@ ex : 맨 첫 조회 값
 
 &sort=leaf
 &sort=created
-&direction=desc
-&direction=asc
+&direction=DESC
+&direction=ASC
 ```
 
 ### res
@@ -178,8 +178,8 @@ ex : 맨 첫 조회 값
 
 &sort=leaf
 &sort=created
-&direction=desc
-&direction=asc
+&direction=DESC
+&direction=ASC
 ```
 
 - status
