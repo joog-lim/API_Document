@@ -54,6 +54,10 @@ https://github.com/joog-lim/API_Document/blob/main/error_code.md
 [POST /]()  
 [DELETE /]()  
 
+## /comment
+
+[POST /{idx}]()
+[DELETE /{idx}]()
 
 ### MISC
 [GET /verify](./MISC.md#get-verify)  
