@@ -67,3 +67,26 @@ https://github.com/joog-lim/API_Document/blob/main/error_code.md
 [POST /signup](./MISC.md#post-signup)  
 [POST /login](./MISC.md#post-login)  
 
+---
+
+API v3.1
+```diff
+- DELETE baseURL/algorithm/{id}
+- PATCH baseURL/algorithm/{id}
+- PATCH baseURL/algorithm/{id}/status
++ DELETE baseURL/algorithm/information/{id}
++ PATCH baseURL/algorithm/content/{id}
++ PATCH baseURL/algorithm/status/{id}
+```
+
+### /algorithm
+
+[POST /](./algorithm.md#post-)  
+[GET /count](./algorithm.md#get-count)  
+[GET /rule](./algorithm.md#get-rule)  
+[GET /rule/web](./algorithm.md#get-ruleweb)  
+[GET /list/{type}/admin](./algorithm.md#get-listtypeadmin)  
+[GET /list/{type}](./algorithm.md#get-listtype)  
+[DELETE /information/{id}](./algorithm.md#delete-id)  
+[PATCH /content/{id}](./algorithm.md#patch-id)  
+[PATCH /status/{id}](./algorithm.md#patch-idstatus)  
