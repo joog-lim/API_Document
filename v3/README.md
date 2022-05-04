@@ -1,6 +1,5 @@
 # API version 3
 
-
 게시물의 상태는 다음과 같이 네가지로 나뉩니다.
 
 ```tsx
@@ -28,6 +27,7 @@ https://server.joog-lim.info/apiV3
 ```
 
 ## 변경사항
+
 ```diff
 + 어드민 로그인을 유저로그인과 통일, isAdmin 값을 통해 구분함
 + 토큰을 jwt를 이용해 관리하며 액세스토큰과 리프레쉬토큰을 사용하는 방식으로 변경
@@ -48,28 +48,35 @@ https://github.com/joog-lim/API_Document/blob/main/error_code.md
 [GET /list/{type}](./algorithm.md#get-listtype)  
 [DELETE /{id}](./algorithm.md#delete-id)  
 [PATCH /{id}](./algorithm.md#patch-id)  
-[PATCH /{id}/status](./algorithm.md#patch-idstatus)  
+[PATCH /{id}/status](./algorithm.md#patch-idstatus)
 
 ### /leaf
+
 [POST /]()  
-[DELETE /]()  
+[DELETE /]()
 
 ## /comment
 
-[POST /{idx}]()
-[DELETE /{idx}]()
+[POST /{idx}](./comment.md#post-idx)
+[DELETE /{idx}](./comment.md#delete-idx)
+
+## /profile
+
+[PATCH /](./profile.md#patch)
 
 ### MISC
+
 [GET /verify](./MISC.md#get-verify)  
 [POST /token](./MISC.md#post-token)  
 [POST /authentication/mail](./MISC.md#post-authenticationmail)  
-[PATCH /authentication/mail](./MISC.md#patch-authenticationmail) 
+[PATCH /authentication/mail](./MISC.md#patch-authenticationmail)
 [POST /signup](./MISC.md#post-signup)  
-[POST /login](./MISC.md#post-login)  
+[POST /login](./MISC.md#post-login)
 
 ---
 
 API v3.1
+
 ```diff
 - DELETE baseURL/algorithm/{id}
 - PATCH baseURL/algorithm/{id}
@@ -89,4 +96,4 @@ API v3.1
 [GET /list/{type}](./algorithm.md#get-listtype)  
 [DELETE /information/{id}](./algorithm.md#delete-id)  
 [PATCH /content/{id}](./algorithm.md#patch-id)  
-[PATCH /status/{id}](./algorithm.md#patch-idstatus)  
+[PATCH /status/{id}](./algorithm.md#patch-idstatus)
