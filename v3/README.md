@@ -69,7 +69,7 @@ https://github.com/joog-lim/API_Document/blob/main/error_code.md
 [GET /verify](./MISC.md#get-verify)  
 [POST /token](./MISC.md#post-token)  
 [POST /authentication/mail](./MISC.md#post-authenticationmail)  
-[PATCH /authentication/mail](./MISC.md#patch-authenticationmail)
+[PATCH /authentication/mail](./MISC.md#patch-authenticationmail)  
 [POST /signup](./MISC.md#post-signup)  
 [POST /login](./MISC.md#post-login)
 
