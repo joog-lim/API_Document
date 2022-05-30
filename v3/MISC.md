@@ -36,18 +36,22 @@ Authorization : RefreshToken
 
 메일 인증을 위한 메일 발송
 
+
 ### req
 
 ```json
 {
+  "type" : "signup | changepw"
   "email" : "s20048@gsm.hs.kr"
 }
 ```
 
+`type`의 `signup`의 경우 회원가입시를 이야기하며, `changepw`의 경우 비밀번호 교체 시 인증을 의미한다.  
+
 ### res
 
 ```ts
-"JL003" | "JL019" | "JL000"
+"JL003" | "JL019" | "JL007" | "JL000"
 ```
 
 ## PATCH /authentication/mail
@@ -129,4 +133,26 @@ if sucess :
   "refreshToken" : "asdfasfd.asdfasdf.asdfasfd",
   "isAdmin" : false
 }
+```
+
+## POST /password
+
+비밀번호 찾기
+
+아이디 찾기는 [다음 이슈](https://github.com/joog-lim/bamboo-front/issues/111)를 참고해주시길 바랍니다.
+
+### req
+
+```json
+{
+  "email" : "s20048@gsm.hs.kr",
+  "number" : "123456",
+  "password" "server.joog-lim.info"
+}
+```
+
+### res
+
+```ts
+"JL000" | "JL007"
 ```
